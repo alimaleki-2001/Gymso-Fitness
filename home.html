@@ -6,9 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <main>
+        <header>
+            <!-- START NAVBAR -->
+            <nav class="bg-gray-900">
+                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                            <!-- Mobile menu button -->
+                            <button id="menu-button" type="button"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="sr-only">باز کردن منو</span>
+                                <!-- Icon when menu is closed -->
+                                <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                <!-- Icon when menu is open -->
+                                <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+                            <div class="flex-shrink-0">
+                                <a href="#"
+                                    class="text-white hover:text-[#f13a11] hover:duration-[0.4s] text-2xl font-bold">باشگاه
+                                    ورزشی</a>
+                            </div>
+                            <div class="hidden sm:block sm:mr-6" dir="rtl">
+                                <div class="flex space-x-4">
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-[#f13a11] hover:duration-[0.4s] px-3 py-2 text-sm font-medium">خانه</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-[#f13a11] hover:duration-[0.4s] px-3 py-2 text-sm font-medium">درباره
+                                        ما</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-[#f13a11] hover:duration-[0.4s] px-3 py-2 text-sm font-medium">کلاس‌ها</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-[#f13a11] hover:duration-[0.4s] px-3 py-2 text-sm font-medium">برنامه‌ها</a>
+                                    <a href="#"
+                                        class="text-gray-300 hover:text-[#f13a11] hover:duration-[0.4s] px-3 py-2 text-sm font-medium">تماس
+                                        با
+                                        ما</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute hidden sm:block inset-y-0 left-0  items-center pl-2 sm:static sm:inset-auto sm:ml-6 sm:pl-0">
+                            <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="sm:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+                        <a href="#"
+                            class="text-gray-300 hover:text-[#f13a11] block px-3 py-2 text-base font-medium">خانه</a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-[#f13a11] block px-3 py-2 text-base font-medium">درباره
+                            ما</a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-[#f13a11] block px-3 py-2 text-base font-medium">کلاس‌ها</a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-[#f13a11] block px-3 py-2 text-base font-medium">برنامه‌ها</a>
+                        <a href="#"
+                            class="text-gray-300 hover:text-[#f13a11] block px-3 py-2 text-base font-medium">تماس با
+                            ما</a>
+                    </div>
+                    <!-- Social icons for mobile view -->
+                    <div class="flex justify-center space-x-4 pb-3">
+                        <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-[#f13a11] px-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            <!-- END NAVBAR -->
+
+        </header>
+
+
+        <script>
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        </script>
+
+    </main>
 
 </body>
 
