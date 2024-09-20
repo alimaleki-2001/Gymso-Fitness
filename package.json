@@ -4,7 +4,7 @@
   "description": "This project is written by Ali Maleki using Tailwind CSS, JavaScript and jQuery",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./tailwind/tailwind.css -o ./css/main.css"
+    "tailwind": "npx tailwindcss -i ./tailwind/tailwind.css -o ./css/main.css --watch"
   },
   "keywords": [],
   "author": "",
