@@ -16,7 +16,7 @@
         <!-- HEADER START -->
         <header>
             <!-- NAVBAR START -->
-            <nav class="bg-[#171819] p-2 fixed top-0 w-full">
+            <nav class="bg-[#171819] p-2 fixed top-0 w-full z-50">
                 <div class="max-w-7xl mx-auto px-2 lg:px-8">
                     <div class="relative flex items-center justify-between h-16">
                         <div class="absolute inset-y-0 right-0 flex items-center lg:hidden group">
@@ -115,6 +115,33 @@
             <!-- NAVBAR END -->
         </header>
         <!-- HEADER END -->
+
+        <!-- SECTION-1 START -->
+        <section class="bg-[#171819] text-white h-screen">
+            <div class="relative h-full flex items-center justify-center">
+                <!-- Background Image -->
+                <img src="./assets/images/hero-bg.jpg" alt="Gymso Fitness"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <!-- Dark Overlay using Tailwind classes -->
+                <div class="absolute inset-0 bg-[#171819]/85"></div>
+                <!-- Overlay content -->
+                <div class="relative text-center space-y-6" dir="rtl">
+                    <h6 class="text-[22px] md:text-[26px] font-[BnazaninBold] text-[#909090]">راهی جدید برای ساختن سبک
+                        زندگی سالم!</h6>
+                    <h1 class="text-5xl md:text-6xl font-[BnazaninBold] w-[75%] mx-auto">بدن خود را در جیمسو فیتنس ارتقا
+                        دهید</h1>
+                    <div class="space-x-2 space-x-reverse p-4">
+                        <a href="./about-us.html"
+                            class="border border-[#f13a11] text-[#f13a11] font-[BnazaninBold] text-xl px-7 py-2.5 rounded-[3px] hover:bg-white hover:border-white">بیشتر
+                            بدانید</a>
+                        <a href="#"
+                            class=" text-white font-[BnazaninBold] text-xl px-5 py-2.5 hover:text-[#f13a11]">شروع
+                            کنید</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-1 END -->
 
         <script>
             const menuButton = document.getElementById('menu-button');
