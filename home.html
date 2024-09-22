@@ -132,10 +132,10 @@
                         دهید</h1>
                     <div class="space-x-2 space-x-reverse p-4">
                         <a href="./about-us.html"
-                            class="border border-[#f13a11] text-[#f13a11] font-[BnazaninBold] text-xl px-7 py-2.5 rounded-[3px] hover:bg-white hover:border-white">بیشتر
+                            class="border border-[#f13a11] text-[#f13a11] font-[BnazaninBold] text-xl px-7 py-2.5 rounded-[3px] hover:bg-white hover:border-white transition-all duration-[0.3s]">بیشتر
                             بدانید</a>
-                        <a href="#"
-                            class=" text-white font-[BnazaninBold] text-xl px-5 py-2.5 hover:text-[#f13a11]">شروع
+                        <a href="#feature"
+                            class=" text-white font-[BnazaninBold] text-xl px-5 py-2.5 hover:text-[#f13a11] transition-all duration-[0.3s]">شروع
                             کنید</a>
                     </div>
                 </div>
@@ -143,19 +143,39 @@
         </section>
         <!-- SECTION-1 END -->
 
-        <script>
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
+        <!-- SECTION-2 START -->
+        <section class="bg-[#171819] text-white p-20" id="feature">
+            <div class="flex flex-col md:flex-row justify-center items-top max-w-7xl mx-auto pt-6 pb-6 gap-10 md:gap-6">
+                <!-- MEMBERSHIP INFORMATION -->
+                <div class="text-right md:w-[40%] flex flex-col gap-5 md:ps-12" dir="rtl">
+                    <h2 class="text-[42px] font-[BnazaninBold] text-nowrap">جدید به جیمسو؟</h2>
+                    <h6 class="text-[22px] font-[BnazaninBold]">عضویت شما تا ۲ ماه رایگان است (۶۲.۵۰ دلار در ماه)</h6>
+                    <p class="font-[Gandom] text-[#666262] text-wrap">
+                        جیمسو یک قالب رایگان HTML از Tooplate برای سایت
+                        تجاری شما است.
+                        با استفاده از Bootstrap v4.2.1 استفاده می‌کند. استفاده رایگان است.
+                    </p>
+                    <a href="#"
+                        class="bg-[#F13A12] font-[Gandom] text-lg text-white text-center px-6 py-3 rounded-sm hover:bg-white hover:text-[#F13A12] transition-all duration-[0.3s]">همین
+                        امروز عضو شوید</a>
+                </div>
 
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                menuIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
-            });
-        </script>
+                <!-- WORKING HOURS -->
+                <div class="text-right md:pe-12 w-[100%] md:w-[unset] md:h-fit md:border-l-2 md:border-l-solid md:border-l-[#202223] whitespace-nowrap"
+                    dir="rtl">
+                    <h2 class="font-[BnazaninBold] text-[42px] mb-5">ساعات کاری</h2>
+                    <strong class="mb-2 block font-[Gandom] text-lg">یکشنبه: تعطیل</strong>
+                    <strong class="block font-[Gandom] text-lg">دوشنبه - جمعه</strong>
+                    <p class="mb-2 font-[Gandom] text-lg text-[#666262]"> ۷:۰۰ صبح - ۱۰:۰۰ شب</p>
+                    <strong class="block font-[Gandom] text-lg">شنبه</strong>
+                    <p class="mb-2 font-[Gandom] text-lg text-[#666262]">۶:۰۰ صبح - ۴:۰۰ بعد از ظهر</p>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION-2 END -->
 
+
+        <script src="./home.js"></script>
     </main>
 
 </body>
