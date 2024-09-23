@@ -2,303 +2,328 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جیمسو فیتنس</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./assets/images/website-logo.png" type="image/x-icon" />
 </head>
 
 <body>
-    <main>
-        <!-- HEADER START -->
-        <header>
-            <!-- NAVBAR START -->
-            <nav class="bg-[#171819] p-2 fixed top-0 w-full z-50">
-                <div class="max-w-7xl mx-auto px-2 lg:px-8">
-                    <div class="relative flex items-center justify-between h-16">
-                        <div class="absolute inset-y-0 right-0 flex items-center lg:hidden group">
-                            <!-- MOBILE MENU BUTTON -->
-                            <button id="menu-button" type="button"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-[#f13a11]"
-                                aria-controls="mobile-menu" aria-expanded="false">
-                                <span class="sr-only">باز کردن منو</span>
-                                <!-- ICON WHEN MENU IS CLOSED -->
-                                <svg id="menu-icon" class="block h-8 w-8 text-[#f13a11]"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                                <!-- ICON WHEN MENU IS OPEN -->
-                                <svg id="close-icon" class="hidden h-8 w-8 text-[#f13a11]"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="flex-1 flex items-center justify-between sm:items-stretch sm:justify-between">
-                            <div class="flex-shrink-0">
-                                <a href="./home.html"
-                                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] font-[BnazaninBold] text-4xl md:ps-12">جیمسو
-                                    فیتنس</a>
-                            </div>
-                            <div class="hidden lg:block sm:mr-6" dir="rtl">
-                                <div class="flex space-x-4">
-                                    <a href="./home.html"
-                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">خانه</a>
-                                    <a href="./about-us.html"
-                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">درباره
-                                        ما</a>
-                                    <a href="#classes"
-                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">کلاس‌ها</a>
-                                    <a href="#schedule"
-                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">برنامه‌ها</a>
-                                    <a href="./contact-us.html"
-                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">تماس
-                                        با
-                                        ما</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute hidden lg:block inset-y-0 left-0  items-center pl-2 sm:static sm:inset-auto sm:ml-6 sm:pl-0">
-                            <a href="https://www.facebook.com/"
-                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
-                                    class="fab fa-facebook"></i></a>
-                            <a href="https://twitter.com/"
-                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/"
-                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MOBILE MENU -->
-                <div class="lg:hidden hidden" id="mobile-menu">
-                    <div class="px-2 pt-2 pb-3 space-y-1 text-center">
-                        <a href="./home.html"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">خانه</a>
-                        <a href="./about-us.html"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">درباره
-                            ما</a>
-                        <a href="#"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">کلاس‌ها</a>
-                        <a href="#"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">برنامه‌ها</a>
-                        <a href="./contact-us.html"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">تماس
-                            با
-                            ما</a>
-                    </div>
-                    <!-- SOCIAL ICONS FOR MOBILE VIEW -->
-                    <div class="flex justify-center space-x-4 pb-3">
-                        <a href="https://www.facebook.com/"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"
-                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                </div>
-            </nav>
-            <!-- NAVBAR END -->
-        </header>
-        <!-- HEADER END -->
-
-        <!-- SECTION-1 START -->
-        <section class="bg-[#171819] text-white h-screen">
-            <div class="relative h-full flex items-center justify-center">
-                <!-- Background Image -->
-                <img src="./assets/images/hero-bg.jpg" alt="Gymso Fitness"
-                    class="absolute inset-0 w-full h-full object-cover">
-                <!-- Dark Overlay using Tailwind classes -->
-                <div class="absolute inset-0 bg-[#171819]/85"></div>
-                <!-- Overlay content -->
-                <div class="relative text-center space-y-6" dir="rtl">
-                    <h6 class="text-[22px] md:text-[26px] font-[BnazaninBold] text-[#909090]">راهی جدید برای ساختن سبک
-                        زندگی سالم!</h6>
-                    <h1 class="text-5xl md:text-6xl font-[BnazaninBold] w-[75%] mx-auto">بدن خود را در جیمسو فیتنس ارتقا
-                        دهید</h1>
-                    <div class="space-x-2 space-x-reverse p-4">
-                        <a href="./about-us.html"
-                            class="border border-[#f13a11] text-[#f13a11] font-[BnazaninBold] text-xl px-7 py-2.5 rounded-[3px] hover:bg-white hover:border-white transition-all duration-[0.3s]">بیشتر
-                            بدانید</a>
-                        <a href="#feature"
-                            class=" text-white font-[BnazaninBold] text-xl px-5 py-2.5 hover:text-[#f13a11] transition-all duration-[0.3s]">شروع
-                            کنید</a>
-                    </div>
-                </div>
+  <main>
+    <!-- HEADER START -->
+    <header>
+      <!-- NAVBAR START -->
+      <nav class="bg-[#171819] p-2 fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-2 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 right-0 flex items-center lg:hidden group">
+              <!-- MOBILE MENU BUTTON -->
+              <button id="menu-button" type="button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-[#f13a11]"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">باز کردن منو</span>
+                <!-- ICON WHEN MENU IS CLOSED -->
+                <svg id="menu-icon" class="block h-8 w-8 text-[#f13a11]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <!-- ICON WHEN MENU IS OPEN -->
+                <svg id="close-icon" class="hidden h-8 w-8 text-[#f13a11]" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
             </div>
-        </section>
-        <!-- SECTION-1 END -->
-
-        <!-- SECTION-2 START -->
-        <section class="bg-[#171819] text-white p-20" id="feature">
-            <div class="flex flex-col md:flex-row justify-center items-top max-w-7xl mx-auto pt-6 pb-6 gap-10 md:gap-6">
-                <!-- MEMBERSHIP INFORMATION -->
-                <div class="text-right md:w-[40%] flex flex-col gap-5 md:ps-12" dir="rtl">
-                    <h2 class="text-[42px] font-[BnazaninBold] text-nowrap">جدید به جیمسو؟</h2>
-                    <h6 class="text-[22px] font-[BnazaninBold]">عضویت شما تا ۲ ماه رایگان است (۶۲.۵۰ دلار در ماه)</h6>
-                    <p class="font-[Gandom] text-[#666262] text-wrap">
-                        جیمسو یک قالب رایگان HTML از Tooplate برای سایت
-                        تجاری شما است.
-                        با استفاده از Bootstrap v4.2.1 استفاده می‌کند. استفاده رایگان است.
-                    </p>
-                    <a href="#"
-                        class="bg-[#F13A12] font-[Gandom] text-lg text-white text-center px-6 py-3 rounded-sm hover:bg-white hover:text-[#F13A12] transition-all duration-[0.3s]">همین
-                        امروز عضو شوید</a>
-                </div>
-
-                <!-- WORKING HOURS -->
-                <div class="text-right md:pe-12 w-[100%] md:w-[unset] md:h-fit md:border-l-2 md:border-l-solid md:border-l-[#202223] whitespace-nowrap"
-                    dir="rtl">
-                    <h2 class="font-[BnazaninBold] text-[42px] mb-5">ساعات کاری</h2>
-                    <strong class="mb-2 block font-[Gandom] text-lg">یکشنبه: تعطیل</strong>
-                    <strong class="block font-[Gandom] text-lg">دوشنبه - جمعه</strong>
-                    <p class="mb-2 font-[Gandom] text-lg text-[#666262]"> ۷:۰۰ صبح - ۱۰:۰۰ شب</p>
-                    <strong class="block font-[Gandom] text-lg">شنبه</strong>
-                    <p class="mb-2 font-[Gandom] text-lg text-[#666262]">۶:۰۰ صبح - ۴:۰۰ بعد از ظهر</p>
-                </div>
-            </div>
-        </section>
-        <!-- SECTION-2 END -->
-
-        <!-- CLASSES START -->
-        <section class="bg-white p-20" id="classes">
-            <div class="container mx-auto py-8">
-                <!-- TITLE SECTION -->
-                <h6 class="text-center text-2xl font-[BnazaninBold] text-[#909090]">بدنی ایده‌آل داشته باشید</h6>
-                <h2 class="text-center text-[44px] font-[BnazaninBold] text-[#25262A] mb-14">کلاس‌های تمرینی ما</h2>
-
-                <!-- CARDS SECTION -->
-                <div class="flex flex-col items-center md:items-baseline md:flex-row md:flex-wrap md:justify-center gap-8"
-                    id="classes-root"></div>
-            </div>
-        </section>
-        <!-- CLASSES END -->
-
-        <!-- SCHEDULE START -->
-        <section class="bg-[#171819]" id="schedule">
-            <div class="container mx-auto">
-              <div class="flex flex-col items-center text-center">
-                <div class="w-full">
-                  <h6 class="text-gray-500" data-aos="fade-up">برنامه‌های هفتگی باشگاه ما</h6>
-                  <h2 class="text-4xl mt-2" data-aos="fade-up" data-aos-delay="200">جدول زمان‌بندی تمرینات</h2>
-                </div>
-          
-                <div class="w-full py-5 overflow-auto">
-                  <table class="table-auto w-full border-collapse border border-gray-700" data-aos="fade-up" data-aos-delay="300">
-                    <thead class="bg-[#f13a11]">
-                      <tr>
-                        <th class="p-3 text-white border border-[#212122]"><i class="fa fa-calendar"></i></th>
-                        <th class="p-3 text-white border border-[#212122]">دوشنبه</th>
-                        <th class="p-3 text-white border border-[#212122]">سه‌شنبه</th>
-                        <th class="p-3 text-white border border-[#212122]">چهارشنبه</th>
-                        <th class="p-3 text-white border border-[#212122]">پنج‌شنبه</th>
-                        <th class="p-3 text-white border border-[#212122]">جمعه</th>
-                        <th class="p-3 text-white border border-[#212122]">شنبه</th>
-                      </tr>
-                    </thead>
-          
-                    <tbody>
-                      <tr>
-                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">7:00 صبح</td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">کاردیو</strong>
-                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
-                        </td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">تناسب اندام قدرتی</strong>
-                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
-                        </td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">بخش یوگا</strong>
-                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
-                        </td>
-                      </tr>
-          
-                      <tr>
-                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">9:00 صبح</td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">بوکس</strong>
-                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
-                        </td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">آیروبیک</strong>
-                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
-                        </td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">کاردیو</strong>
-                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
-                        </td>
-                      </tr>
-          
-                      <tr>
-                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">11:00 صبح</td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">بوکس</strong>
-                          <span class="text-gray-400 block">11:00 صبح - 2:00 عصر</span>
-                        </td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">آیروبیک</strong>
-                          <span class="text-gray-400 block">11:30 صبح - 3:30 عصر</span>
-                        </td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">تمرینات بدنی</strong>
-                          <span class="text-gray-400 block">11:50 صبح - 5:20 عصر</span>
-                        </td>
-                      </tr>
-          
-                      <tr>
-                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">2:00 عصر</td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">بوکس</strong>
-                          <span class="text-gray-400 block">2:00 عصر - 4:00 عصر</span>
-                        </td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">وزنه‌برداری قدرتی</strong>
-                          <span class="text-gray-400 block">3:00 عصر - 6:00 عصر</span>
-                        </td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">کاردیو</strong>
-                          <span class="text-gray-400 block">6:00 عصر - 9:00 شب</span>
-                        </td>
-                        <td class="p-3 border border-[#212122]"></td>
-                        <td class="p-3 text-center border border-[#212122]">
-                          <strong class="text-white">کراس فیت</strong>
-                          <span class="text-gray-400 block">5:00 عصر - 7:00 عصر</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="flex-1 flex items-center justify-between sm:items-stretch sm:justify-between">
+              <div class="flex-shrink-0">
+                <a href="./home.html"
+                  class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] font-[BnazaninBold] text-4xl md:ps-12">جیمسو
+                  فیتنس</a>
+              </div>
+              <div class="hidden lg:block sm:mr-6" dir="rtl">
+                <div class="flex space-x-4">
+                  <a href="./home.html"
+                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">خانه</a>
+                  <a href="./about-us.html"
+                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">درباره
+                    ما</a>
+                  <a href="#classes"
+                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">کلاس‌ها</a>
+                  <a href="#schedule"
+                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">برنامه‌ها</a>
+                  <a href="./contact-us.html"
+                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">تماس
+                    با
+                    ما</a>
                 </div>
               </div>
             </div>
-          </section>
-        <!-- SCHEDULE START -->
+            <div
+              class="absolute hidden lg:block inset-y-0 left-0  items-center pl-2 sm:static sm:inset-auto sm:ml-6 sm:pl-0">
+              <a href="https://www.facebook.com/"
+                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/"
+                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
 
+        <!-- MOBILE MENU -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+            <a href="./home.html"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">خانه</a>
+            <a href="./about-us.html"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">درباره
+              ما</a>
+            <a href="#"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">کلاس‌ها</a>
+            <a href="#"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">برنامه‌ها</a>
+            <a href="./contact-us.html"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">تماس
+              با
+              ما</a>
+          </div>
+          <!-- SOCIAL ICONS FOR MOBILE VIEW -->
+          <div class="flex justify-center space-x-4 pb-3">
+            <a href="https://www.facebook.com/"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+    </header>
+    <!-- HEADER END -->
 
-        <script src="./js/home.js"></script>
-    </main>
+    <!-- SECTION-1 START -->
+    <section class="bg-[#171819] text-white h-screen">
+      <div class="relative h-full flex items-center justify-center">
+        <!-- Background Image -->
+        <img src="./assets/images/hero-bg.jpg" alt="Gymso Fitness" class="absolute inset-0 w-full h-full object-cover">
+        <!-- Dark Overlay using Tailwind classes -->
+        <div class="absolute inset-0 bg-[#171819]/85"></div>
+        <!-- Overlay content -->
+        <div class="relative text-center space-y-6" dir="rtl">
+          <h6 class="text-[22px] md:text-[26px] font-[BnazaninBold] text-[#909090]">راهی جدید برای ساختن سبک
+            زندگی سالم!</h6>
+          <h1 class="text-5xl md:text-6xl font-[BnazaninBold] w-[75%] mx-auto">بدن خود را در جیمسو فیتنس ارتقا
+            دهید</h1>
+          <div class="space-x-2 space-x-reverse p-4">
+            <a href="./about-us.html"
+              class="border border-[#f13a11] text-[#f13a11] font-[BnazaninBold] text-xl px-7 py-2.5 rounded-[3px] hover:bg-white hover:border-white transition-all duration-[0.3s]">بیشتر
+              بدانید</a>
+            <a href="#feature"
+              class=" text-white font-[BnazaninBold] text-xl px-5 py-2.5 hover:text-[#f13a11] transition-all duration-[0.3s]">شروع
+              کنید</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION-1 END -->
+
+    <!-- SECTION-2 START -->
+    <section class="bg-[#171819] text-white p-20" id="feature">
+      <div class="flex flex-col md:flex-row justify-center items-top max-w-7xl mx-auto pt-6 pb-6 gap-10 md:gap-6">
+        <!-- MEMBERSHIP INFORMATION -->
+        <div class="text-right md:w-[40%] flex flex-col gap-5 md:ps-12" dir="rtl">
+          <h2 class="text-[42px] font-[BnazaninBold] text-nowrap">جدید به جیمسو؟</h2>
+          <h6 class="text-[22px] font-[BnazaninBold]">عضویت شما تا ۲ ماه رایگان است (۶۲.۵۰ دلار در ماه)</h6>
+          <p class="font-[Gandom] text-[#666262] text-wrap">
+            جیمسو یک قالب رایگان HTML از Tooplate برای سایت
+            تجاری شما است.
+            با استفاده از Bootstrap v4.2.1 استفاده می‌کند. استفاده رایگان است.
+          </p>
+          <a href="#"
+            class="bg-[#F13A12] font-[Gandom] text-lg text-white text-center px-6 py-3 rounded-sm hover:bg-white hover:text-[#F13A12] transition-all duration-[0.3s]">همین
+            امروز عضو شوید</a>
+        </div>
+
+        <!-- WORKING HOURS -->
+        <div
+          class="text-right md:pe-12 w-[100%] md:w-[unset] md:h-fit md:border-l-2 md:border-l-solid md:border-l-[#202223] whitespace-nowrap"
+          dir="rtl">
+          <h2 class="font-[BnazaninBold] text-[42px] mb-5">ساعات کاری</h2>
+          <strong class="mb-2 block font-[Gandom] text-lg">یکشنبه: تعطیل</strong>
+          <strong class="block font-[Gandom] text-lg">دوشنبه - جمعه</strong>
+          <p class="mb-2 font-[Gandom] text-lg text-[#666262]"> ۷:۰۰ صبح - ۱۰:۰۰ شب</p>
+          <strong class="block font-[Gandom] text-lg">شنبه</strong>
+          <p class="mb-2 font-[Gandom] text-lg text-[#666262]">۶:۰۰ صبح - ۴:۰۰ بعد از ظهر</p>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION-2 END -->
+
+    <!-- CLASSES START -->
+    <section class="bg-white p-20" id="classes">
+      <div class="container mx-auto py-8">
+        <!-- TITLE SECTION -->
+        <h6 class="text-center text-2xl font-[BnazaninBold] text-[#909090]">بدنی ایده‌آل داشته باشید</h6>
+        <h2 class="text-center text-[44px] font-[BnazaninBold] text-[#25262A] mb-14">کلاس‌های تمرینی ما</h2>
+
+        <!-- CARDS SECTION -->
+        <div class="flex flex-col items-center md:items-baseline md:flex-row md:flex-wrap md:justify-center gap-8"
+          id="classes-root"></div>
+      </div>
+    </section>
+    <!-- CLASSES END -->
+
+    <!-- SCHEDULE START -->
+    <section class="bg-[#171819] px-12 xl:px-64 py-28" id="schedule">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <!-- TITLE SECTION -->
+          <div class="w-full">
+            <h6 class="text-[26px] text-[#909090] font-[BnazaninBold]">برنامه‌های هفتگی باشگاه ما</h6>
+            <h2 class="text-4xl text-white mt-2 mb-10 font-[BnazaninBold]">جدول زمان‌بندی تمرینات</h2>
+          </div>
+
+          <!-- TABLE SECTION -->
+          <div class="w-full py-5 overflow-auto font-[Gandom]">
+            <table class="table-auto w-full border-collapse">
+              <thead class="bg-[#f13a11]">
+                <tr>
+                  <th class="p-4 text-white border border-[#212122] text-lg"><i
+                      class="fa-regular fa-calendar-days"></i></i></th>
+                  <th class="p-4 text-white border border-[#212122]">دوشنبه</th>
+                  <th class="p-4 text-white border border-[#212122]">سه‌شنبه</th>
+                  <th class="p-4 text-white border border-[#212122]">چهارشنبه</th>
+                  <th class="p-4 text-white border border-[#212122]">پنج‌شنبه</th>
+                  <th class="p-4 text-white border border-[#212122]">جمعه</th>
+                  <th class="p-4 text-white border border-[#212122]">شنبه</th>
+                </tr>
+              </thead>
+
+              <tbody dir="rtl">
+                <tr>
+                  <td class="p-5 text-sm bg-[#f13a11] text-white text-center border border-[#212122]">۰۰:٧ صبح </td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">کاردیو</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٧ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">تناسب اندام قدرتی</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٧ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">بخش یوگا</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٧ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="p-5 text-sm bg-[#f13a11] text-white text-center border border-[#212122]">۰۰:٩ صبح</td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">بوکس</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٨ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">آیروبیک</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٨ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">کاردیو</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٨ صبح - ٩:۰۰ صبح</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="p-5 text-sm bg-[#f13a11] text-white text-center border border-[#212122]">۰۰:١١ صبح</td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">بوکس</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:١١ صبح - ٢:۰۰ عصر</span>
+                  </td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">آیروبیک</strong>
+                    <span class="text-[#909090] text-sm block">٣۰:١١ صبح - ٣:٣۰ عصر</span>
+                  </td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">تمرینات بدنی</strong>
+                    <span class="text-[#909090] text-sm block">٥۰:١١ صبح - ٥:٢۰ عصر</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="p-5 text-sm bg-[#f13a11] text-white text-center border border-[#212122]">۰۰:٢ عصر</td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">بوکس</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٢ عصر - ۴:۰۰ عصر</span>
+                  </td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">وزنه‌برداری قدرتی</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٣ عصر - ۶:۰۰ عصر</span>
+                  </td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">کاردیو</strong>
+                    <span class="text-[#909090] text-sm block">۶:۰۰ عصر - ٩:۰۰ شب</span>
+                  </td>
+                  <td class="p-5 border border-[#212122]"></td>
+                  <td class="p-5 text-center border border-[#212122]">
+                    <strong class="text-white">کراس فیت</strong>
+                    <span class="text-[#909090] text-sm block">۰۰:٥ عصر - ٧:۰۰ عصر</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SCHEDULE START -->
+
+    <!-- FOOTER START -->
+    <footer class="bg-white border-t border-gray-200 py-16">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between font-[Gandom] gap-5">
+
+          <div class="w-full md:w-5/12 text-center md:text-right">
+            <p class="text-[#666262]">کپی رایت &copy; ٢۰٢۴ شرکت جیمسو فیتنس
+              <br>طراحی: <a href="https://www.tooplate.com" class="text-[#666262]">علی مالکی</a>
+            </p>
+          </div>
+
+          <div class="flex justify-center md:w-6/12 w-full text-right mb-6">
+            <p class="mr-4 flex items-center">
+              <i class="fa-regular fa-envelope text-[#f13a11] mr-2"></i>
+              <a href="#" class="text-[#666262]">hello@company.co</a>
+            </p>
+
+            <p class="ml-8 flex items-center text-[#666262]">
+              <i class="fa fa-phone text-[#f13a11] mr-2"></i> ۰١۰ - ۰٢۰ - ۰٨۴۰
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./js/home.js"></script>
+  </main>
 
 </body>
 
