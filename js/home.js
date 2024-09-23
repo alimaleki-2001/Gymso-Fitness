@@ -12,27 +12,26 @@ menuButton.addEventListener('click', () => {
 // NAVBAR END
 
 // CLASSES START
-// const classCards = document.getElementById("class-cards");
+let fetchData = async () => {
+    let html = ""
+    let res = await fetch("http://localhost:3000/classes")
+    let data = await res.json()
 
-//     fetch('http://localhost:3000/classes')  // Replace with your API endpoint
-//       .then(response => response.json())
-//       .then(data => {
-//         data.forEach(item => {
-//           const card = document.createElement('div');
-//           card.classList.add('bg-white', 'shadow-lg', 'rounded-lg', 'overflow-hidden', 'p-4', 'text-right');
+    data.forEach((element) => {
+        html += `
+        <div class="bg-white shadow-custom overflow-hidden text-right w-[500px] lg:w-[350px]" dir="rtl">
+            <img src="${element.imageUrl}" alt="${element.title}" class="w-[100%] object-contain mb-2">
+            <div class="p-4 relative">
+                <h3 class="text-4xl text-[#25262A] font-[BnazaninBold] mb-1">${element.title}</h3>
+                <span class="font-[Gandom]"><strong class="text-[#909090]">مربی</strong> - ${element.trainer}</span>
+                <span class="text-lg font-[Gandom] font-bold text-white bg-[#f13a11] rounded-full p-3 absolute left-11 top-9">$${element.price}</span>
+                <p class="text-lg font-[Gandom] text-[#666262] mb-4 mt-4 lg:w-[90%]">${element.description}</p>
+            </div>
+        </div>
+    `
+    })
+    document.querySelector("div#classes-root").innerHTML = html
+}
 
-//           card.innerHTML = `
-//             <img src="${item.image}" alt="${item.title}" class="w-full h-40 object-cover mb-4">
-//             <div class="text-lg font-bold">${item.title}</div>
-//             <div class="text-sm text-gray-500 mb-2">مربی: ${item.trainer}</div>
-//             <div class="text-sm mb-4">${item.description}</div>
-//             <div class="text-lg font-bold text-red-500">${item.price} تومان</div>
-//           `;
-
-//           classCards.appendChild(card);
-//         });
-//       })
-//       .catch(error => {
-//         console.error('Error fetching the data:', error);
-//       });
-      // CLASSES END
+document.addEventListener("DOMContentLoaded", fetchData);
+// CLASSES END
