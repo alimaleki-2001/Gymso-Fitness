@@ -54,9 +54,9 @@
                                     <a href="./about-us.html"
                                         class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">درباره
                                         ما</a>
-                                    <a href="#"
+                                    <a href="#classes"
                                         class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">کلاس‌ها</a>
-                                    <a href="#"
+                                    <a href="#schedule"
                                         class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">برنامه‌ها</a>
                                     <a href="./contact-us.html"
                                         class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">تماس
@@ -175,50 +175,127 @@
         <!-- SECTION-2 END -->
 
         <!-- CLASSES START -->
-         <section class="bg-white p-20">
+        <section class="bg-white p-20" id="classes">
             <div class="container mx-auto py-8">
-                <!-- Title Section -->
-                <h6 class="text-center text-xl font-bold text-[#909090] mb-3">بدنی ایده‌آل داشته باشید</h6>
-                <h2 class="text-center text-3xl font-bold text-[#25262A] mb-14">کلاس‌های تمرینی ما</h2>
-            
-                <!-- Cards Section -->
-                <div class="flex flex-col items-center md:items-baseline md:flex-row md:justify-center md:space-x-8 space-y-6 md:space-y-0">
-                  <!-- Yoga Card -->
-                  <div class="bg-white shadow-custom overflow-hidden text-right md:w-[23%]" dir="rtl">
-                    <img src="./assets/images/class/yoga-class.jpg" alt="یوگا" class="w-[100%] object-contain mb-4">
-                    <div class="p-4 relative">
-                        <h3 class="text-lg font-bold mb-2">یوگا</h3>
-                        <span class="text-sm text-gray-500"><strong>مربی: </strong>بلا</span>
-                        <span class="text-white text-lg font-bold bg-[#f13a11] rounded-full p-3 absolute left-10 top-6">$۵۰</span>
-                        <p class="text-sm mb-4 mt-6">این کلاس برای آرامش ذهن و بدن است.</p>
-                    </div>
-                  </div>
-            
-                  <!-- Aerobic Card -->
-                  <div class="bg-white shadow-custom overflow-hidden text-right md:w-[23%]" dir="rtl">
-                    <img src="./assets/images/class/crossfit-class.jpg" alt="ایروبیک" class="w-[100%] object-contain mb-4">
-                    <div class="p-4 relative">
-                        <h3 class="text-lg font-bold mb-2">ایروبیک</h3>
-                        <span class="text-sm text-gray-500 mb-2"><strong>مربی: </strong>مری</span>
-                        <span class="text-lg font-bold text-white bg-[#f13a11] rounded-full p-3 absolute left-10 top-6">$۶۶</span>
-                        <p class="text-sm mb-4 mt-6">این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.</p>
-                    </div>
-                  </div>
-            
-                  <!-- Cardio Card -->
-                  <div class="bg-white shadow-custom overflow-hidden text-right md:w-[23%]" dir="rtl">
-                    <img src="./assets/images/class/cardio-class.jpg" alt="کاردیو" class="w-[100%] object-contain mb-4">
-                    <div class="p-4 relative">
-                        <h3 class="text-lg font-bold mb-2">کاردیو</h3>
-                        <span class="text-sm text-gray-500 mb-2"><strong>مربی: </strong>کاثی</span>
-                        <span class="text-lg font-bold text-white bg-[#f13a11] rounded-full p-3 absolute left-10 top-6">$۷۵</span>
-                        <p class="text-sm mb-4 mt-6">این کلاس کاردیو سطح کالری سوزی بالایی دارد.</p>
-                    </div>
-                  </div>
+                <!-- TITLE SECTION -->
+                <h6 class="text-center text-2xl font-[BnazaninBold] text-[#909090]">بدنی ایده‌آل داشته باشید</h6>
+                <h2 class="text-center text-[44px] font-[BnazaninBold] text-[#25262A] mb-14">کلاس‌های تمرینی ما</h2>
+
+                <!-- CARDS SECTION -->
+                <div class="flex flex-col items-center md:items-baseline md:flex-row md:flex-wrap md:justify-center gap-8"
+                    id="classes-root"></div>
+            </div>
+        </section>
+        <!-- CLASSES END -->
+
+        <!-- SCHEDULE START -->
+        <section class="bg-[#171819]" id="schedule">
+            <div class="container mx-auto">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-full">
+                  <h6 class="text-gray-500" data-aos="fade-up">برنامه‌های هفتگی باشگاه ما</h6>
+                  <h2 class="text-4xl mt-2" data-aos="fade-up" data-aos-delay="200">جدول زمان‌بندی تمرینات</h2>
+                </div>
+          
+                <div class="w-full py-5 overflow-auto">
+                  <table class="table-auto w-full border-collapse border border-gray-700" data-aos="fade-up" data-aos-delay="300">
+                    <thead class="bg-[#f13a11]">
+                      <tr>
+                        <th class="p-3 text-white border border-[#212122]"><i class="fa fa-calendar"></i></th>
+                        <th class="p-3 text-white border border-[#212122]">دوشنبه</th>
+                        <th class="p-3 text-white border border-[#212122]">سه‌شنبه</th>
+                        <th class="p-3 text-white border border-[#212122]">چهارشنبه</th>
+                        <th class="p-3 text-white border border-[#212122]">پنج‌شنبه</th>
+                        <th class="p-3 text-white border border-[#212122]">جمعه</th>
+                        <th class="p-3 text-white border border-[#212122]">شنبه</th>
+                      </tr>
+                    </thead>
+          
+                    <tbody>
+                      <tr>
+                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">7:00 صبح</td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">کاردیو</strong>
+                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
+                        </td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">تناسب اندام قدرتی</strong>
+                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
+                        </td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">بخش یوگا</strong>
+                          <span class="text-gray-400 block">7:00 صبح - 9:00 صبح</span>
+                        </td>
+                      </tr>
+          
+                      <tr>
+                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">9:00 صبح</td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">بوکس</strong>
+                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
+                        </td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">آیروبیک</strong>
+                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
+                        </td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">کاردیو</strong>
+                          <span class="text-gray-400 block">8:00 صبح - 9:00 صبح</span>
+                        </td>
+                      </tr>
+          
+                      <tr>
+                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">11:00 صبح</td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">بوکس</strong>
+                          <span class="text-gray-400 block">11:00 صبح - 2:00 عصر</span>
+                        </td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">آیروبیک</strong>
+                          <span class="text-gray-400 block">11:30 صبح - 3:30 عصر</span>
+                        </td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">تمرینات بدنی</strong>
+                          <span class="text-gray-400 block">11:50 صبح - 5:20 عصر</span>
+                        </td>
+                      </tr>
+          
+                      <tr>
+                        <td class="p-3 bg-[#f13a11] text-white text-center border border-[#212122]">2:00 عصر</td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">بوکس</strong>
+                          <span class="text-gray-400 block">2:00 عصر - 4:00 عصر</span>
+                        </td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">وزنه‌برداری قدرتی</strong>
+                          <span class="text-gray-400 block">3:00 عصر - 6:00 عصر</span>
+                        </td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">کاردیو</strong>
+                          <span class="text-gray-400 block">6:00 عصر - 9:00 شب</span>
+                        </td>
+                        <td class="p-3 border border-[#212122]"></td>
+                        <td class="p-3 text-center border border-[#212122]">
+                          <strong class="text-white">کراس فیت</strong>
+                          <span class="text-gray-400 block">5:00 عصر - 7:00 عصر</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-         </section>
-        <!-- CLASSES END -->
+            </div>
+          </section>
+        <!-- SCHEDULE START -->
+
 
         <script src="./js/home.js"></script>
     </main>
