@@ -1,0 +1,28 @@
+{
+    "classes": [
+        {
+            "id": 1,
+            "title": "یوگا",
+            "trainer": "بلا",
+            "description": "توضیحات کلاس یوگا",
+            "price": "۵۰",
+            "image": "./assets/images/class/yoga-class.jpg"
+        },
+        {
+            "id": 2,
+            "title": "ایروبیک",
+            "trainer": "مری",
+            "description": "توضیحات کلاس ایروبیک",
+            "price": "۶۶",
+            "image": "./assets/images/class/crossfit-class.jpg"
+        },
+        {
+            "id": 3,
+            "title": "کاردیو",
+            "trainer": "کاثی",
+            "description": "توضیحات کلاس کاردیو",
+            "price": "۷۵",
+            "image": "./assets/images/class/cardio-class.jpg"
+        }
+    ]
+}
