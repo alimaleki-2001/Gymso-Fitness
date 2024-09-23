@@ -20,7 +20,7 @@ let fetchData = async () => {
     data.forEach((element) => {
         html += `
         <div class="bg-white shadow-custom overflow-hidden text-right w-[500px] lg:w-[350px]" dir="rtl">
-            <img src="${element.imageUrl}" alt="${element.title}" class="w-[100%] object-contain mb-2">
+            <img src="${element.imageUrl}" alt="${element.title}" class="w-[100%] object-contain mb-2" />
             <div class="p-4 relative">
                 <h3 class="text-4xl text-[#25262A] font-[BnazaninBold] mb-1">${element.title}</h3>
                 <span class="font-[Gandom]"><strong class="text-[#909090]">مربی</strong> - ${element.trainer}</span>
