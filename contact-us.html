@@ -124,10 +124,11 @@
         <!-- CONTACT START -->
         <section class="contact py-16" id="contact">
             <div class="container mx-auto">
-                <div class="flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0 p-36">
+                <div
+                    class="flex flex-col md:flex-row lg:space-x-8 space-y-8 md:space-y-0 justify-center py-28 px-14 gap-x-6 lg:gap-14">
 
                     <!-- FORM SECTION -->
-                    <div class="lg:w-1/2 w-full" dir="rtl">
+                    <div class="xl:w-[32%] w-full" dir="rtl">
                         <h2 class="text-4xl text-[#25262A] font-[BnazaninBold] mb-6">هر سوالی دارید بپرسید</h2>
 
                         <form action="#" method="post" class="space-y-6" role="form">
@@ -147,17 +148,17 @@
                     </div>
 
                     <!-- LOCATION SECTION -->
-                    <div class="lg:w-1/2 w-full" dir="rtl">
+                    <div class="xl:w-[32%] w-full" dir="rtl">
                         <h2 class="text-4xl text-[#25262A] font-[BnazaninBold] mb-6">کجا می‌توانید ما را پیدا کنید</h2>
 
-                        <p class="mb-4 flex items-center font-[Gandom] text-[#666262] text-lg">
+                        <p class="mb-8 flex items-center font-[Gandom] text-[#666262] text-lg">
                             <i class="fa fa-map-marker-alt ml-2 text-[#f13a11]"></i> ١٢۰ - ٢۴۰ ریو دو ژانیرو - ایالت ریو
                             دو ژانیرو، برزیل
                         </p>
-                        <div class="google-map">
+                        <div class="google-map lg:mt-16 border-t-[1px] border-[#efebeb] pt-8 lg:pt-14">
                             <iframe
                                 src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                width="99%" height="260" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
                     </div>
 
@@ -166,6 +167,31 @@
         </section>
         <!-- CONTACT END -->
 
+        <!-- FOOTER START -->
+        <footer class="bg-white border-t border-gray-200 py-16">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap justify-between font-[Gandom] gap-5">
+
+                    <div class="w-full md:w-5/12 text-center md:text-right">
+                        <p class="text-[#666262]">کپی رایت &copy; ٢۰٢۴ شرکت جیمسو فیتنس
+                            <br>طراحی: <a href="https://www.tooplate.com" class="text-[#666262]">علی مالکی</a>
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center md:w-6/12 w-full text-right mb-6">
+                        <p class="mr-4 flex items-center">
+                            <i class="fa-regular fa-envelope text-[#f13a11] mr-2"></i>
+                            <a href="#" class="text-[#666262]">hello@company.co</a>
+                        </p>
+
+                        <p class="ml-8 flex items-center text-[#666262]">
+                            <i class="fa fa-phone text-[#f13a11] mr-2"></i> ۰١۰ - ۰٢۰ - ۰٨۴۰
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
 
         <script src="./js/contact-us.js"></script>
     </main>
