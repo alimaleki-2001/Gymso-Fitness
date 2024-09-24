@@ -13,6 +13,116 @@
 </head>
 
 <body>
+    <main>
+        <!-- HEADER START -->
+        <header>
+            <!-- NAVBAR START -->
+            <nav class="bg-[#171819] p-2 fixed top-0 w-full z-50">
+                <div class="max-w-7xl mx-auto px-2 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="absolute inset-y-0 right-0 flex items-center lg:hidden group">
+                            <!-- MOBILE MENU BUTTON -->
+                            <button id="menu-button" type="button"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-[#f13a11]"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="sr-only">باز کردن منو</span>
+                                <!-- ICON WHEN MENU IS CLOSED -->
+                                <svg id="menu-icon" class="block h-8 w-8 text-[#f13a11]"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                <!-- ICON WHEN MENU IS OPEN -->
+                                <svg id="close-icon" class="hidden h-8 w-8 text-[#f13a11]"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex-1 flex items-center justify-between sm:items-stretch sm:justify-between">
+                            <div class="flex-shrink-0">
+                                <a href="./home.html"
+                                    class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] font-[BnazaninBold] text-4xl md:ps-12">جیمسو
+                                    فیتنس</a>
+                            </div>
+                            <div class="hidden lg:block sm:mr-3" dir="rtl">
+                                <div class="flex space-x-2">
+                                    <a href="./home.html"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">خانه</a>
+                                    <a href="./about-us.html"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">درباره
+                                        ما</a>
+                                    <a href="./home.html#classes"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">کلاس‌ها</a>
+                                    <a href="./home.html#schedule"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">برنامه‌ها</a>
+                                    <a href="./membership.html"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">عضویت</a>
+                                    <a href="./contact-us.html"
+                                        class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-5 py-2 font-[BnazaninBold] text-xl">تماس
+                                        با
+                                        ما</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute hidden lg:block inset-y-0 left-0  items-center pl-2 sm:static sm:inset-auto sm:ml-6 sm:pl-0">
+                            <a href="https://www.facebook.com/"
+                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/"
+                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"
+                                class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-lg"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MOBILE MENU -->
+                <div class="lg:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+                        <a href="./home.html"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">خانه</a>
+                        <a href="./about-us.html"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">درباره
+                            ما</a>
+                        <a href="./home.html#classes"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">کلاس‌ها</a>
+                        <a href="./home.html#schedule"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">برنامه‌ها</a>
+                        <a href="./membership.html"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">عضویت</a>
+                        <a href="./contact-us.html"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] block px-3 py-2 font-[BnazaninBold] text-lg">تماس
+                            با
+                            ما</a>
+                    </div>
+                    <!-- SOCIAL ICONS FOR MOBILE VIEW -->
+                    <div class="flex justify-center space-x-4 pb-3">
+                        <a href="https://www.facebook.com/"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"
+                            class="text-white hover:text-[#f13a11] transition-all duration-[0.4s] px-2 text-xl"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            <!-- NAVBAR END -->
+        </header>
+        <!-- HEADER END -->
+
+        <script src="./js/contact-us.js"></script>
+    </main>
 
 </body>
 
