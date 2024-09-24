@@ -121,6 +121,82 @@
         </header>
         <!-- HEADER END -->
 
+        <!-- MEMBERSHIP FORM START -->
+        <section id="membershipForm"
+            class="max-w-lg mx-auto p-6 mt-32 mb-6 bg-white rounded-lg shadow-lg shadow-gray-400" dir="rtl">
+            <div class="mb-8 text-center">
+                <h2 class="text-5xl font-[BnazaninBold] text-[#25262A]" id="membershipFormLabel">فرم عضویت</h2>
+            </div>
+
+            <div class="mb-4">
+                <form class="membership-form font-[Gandom]" role="form">
+                    <div class="mb-5">
+                        <input type="text"
+                            class="w-full p-4 border border-[#ced4da] rounded-sm placeholder-[#666262] focus:outline-none focus:border-[#171819] focus:ring-0"
+                            name="cf-name" placeholder="نام کامل">
+                    </div>
+
+                    <div class="mb-5">
+                        <input type="email"
+                            class="w-full p-4 border border-[#ced4da] rounded-sm placeholder-[#666262] focus:outline-none focus:border-[#171819] focus:ring-0"
+                            name="cf-email" placeholder="Johndoe@gmail.com">
+                    </div>
+
+                    <div class="mb-5">
+                        <input type="tel"
+                            class="w-full p-4 border border-[#ced4da] rounded-sm placeholder-[#666262] focus:outline-none focus:border-[#171819] focus:ring-0"
+                            name="cf-phone" placeholder="٠٩١٢٣۴٥۶٧٨٩" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" dir="rtl"
+                            required>
+                    </div>
+
+                    <div class="mb-5">
+                        <textarea
+                            class="w-full p-4 border border-[#ced4da] rounded-sm placeholder-[#666262] focus:outline-none focus:border-[#171819] focus:ring-0"
+                            rows="3" name="cf-message" placeholder="پیام اضافه"></textarea>
+                    </div>
+
+                    <div class="mb-5">
+                        <button type="submit"
+                            class="w-full p-3 bg-[#171819] text-white rounded-sm hover:bg-[#f13a11] transition-all duration-[0.3s] ease-in-out">ثبت</button>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" class="h-4 w-4 mt-[2px] rounded" id="signup-agree">
+                        <label class="mr-2 text-[#6c757d]" for="signup-agree">
+                            با <a href="#" class="text-[#f13a11]">شرایط و قوانین</a> موافقم
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- MEMBERSHIP FORM END -->
+
+        <!-- FOOTER START -->
+        <footer class="bg-white border-t border-gray-200 py-16">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap justify-between font-[Gandom] gap-5">
+
+                    <div class="w-full md:w-5/12 text-center md:text-right">
+                        <p class="text-[#666262]">کپی رایت &copy; ٢۰٢۴ شرکت جیمسو فیتنس
+                            <br>طراحی: <a href="https://www.tooplate.com" class="text-[#666262]">علی مالکی</a>
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center md:w-6/12 w-full text-right mb-6">
+                        <p class="mr-4 flex items-center">
+                            <i class="fa-regular fa-envelope text-[#f13a11] mr-2"></i>
+                            <a href="#" class="text-[#666262]">hello@company.co</a>
+                        </p>
+
+                        <p class="ml-8 flex items-center text-[#666262]">
+                            <i class="fa fa-phone text-[#f13a11] mr-2"></i> ۰١۰ - ۰٢۰ - ۰٨۴۰
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
         <script src="./js/membership.js"></script>
     </main>
 
