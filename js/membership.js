@@ -1,8 +1,8 @@
 // NAVBAR START
-const menuButton = document.getElementById('menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-const menuIcon = document.getElementById('menu-icon');
-const closeIcon = document.getElementById('close-icon');
+let menuButton = document.getElementById('menu-button');
+let mobileMenu = document.getElementById('mobile-menu');
+let menuIcon = document.getElementById('menu-icon');
+let closeIcon = document.getElementById('close-icon');
 
 menuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
