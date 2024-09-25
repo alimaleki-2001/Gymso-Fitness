@@ -1,2 +1,2 @@
 # Gymso-Fitness
-This project is written by Ali Maleki using Tailwind CSS and JavaScript 
+This project is written by Ali Maleki using Tailwind CSS and JavaScript (Fully Responsive)
