@@ -1,25 +1,39 @@
 {
-    "classes": [
-        {
-          "title": "یوگا",
-          "trainer": "بلا",
-          "price": "۵۰",
-          "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
-          "imageUrl": "./assets/images/class/yoga-class.jpg"
-        },
-        {
-          "title": "ایروبیک",
-          "trainer": "مری",
-          "price": "۶۶",
-          "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
-          "imageUrl": "./assets/images/class/crossfit-class.jpg"
-        },
-        {
-          "title": "کاردیو",
-          "trainer": "کاثی",
-          "price": "۷۵",
-          "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
-          "imageUrl": "./assets/images/class/cardio-class.jpg"
-        }
-      ]
+  "classes": [
+    {
+      "title": "یوگا",
+      "trainer": "بلا",
+      "price": "۵۰",
+      "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
+      "imageUrl": "./assets/images/class/yoga-class.jpg"
+    },
+    {
+      "title": "ایروبیک",
+      "trainer": "مری",
+      "price": "۶۶",
+      "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
+      "imageUrl": "./assets/images/class/crossfit-class.jpg"
+    },
+    {
+      "title": "کاردیو",
+      "trainer": "کاثی",
+      "price": "۷۵",
+      "description": "این کلاس برای تناسب اندام و استقامت بدن طراحی شده است.",
+      "imageUrl": "./assets/images/class/cardio-class.jpg"
+    }
+  ],
+  "FirstTrainer": [
+    {
+      "name": "مری یان",
+      "job": "مربی یوگا",
+      "img": "./assets/images/team/team-image.jpg"
+    }
+  ],
+  "SecondTrainer": [
+    {
+      "name": "کاترینا",
+      "job": "مربی بدن‌سازی",
+      "img": "./assets/images/team/team-image01.jpg"
+    }
+  ]
 }
